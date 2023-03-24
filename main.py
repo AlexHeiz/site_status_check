@@ -5,6 +5,7 @@ import sched, time
 s = sched.scheduler(time.time, time.sleep)
 
 
+
 # Функция таймера
 def timer_for_bot():
     s.enter(1800, 1, timer_for_bot) #<-- 1 раз в 1800 секунд запрос
